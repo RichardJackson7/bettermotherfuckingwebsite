@@ -1,0 +1,82 @@
+body {
+    color: #444;
+    font-size:18px;
+    margin: 40px auto;
+    max-width:650px;
+    line-height:1.6;;
+}
+h1 {
+    color: black;
+    font-size: 34px;
+    font-family: Times New Roman;
+    text-align: center;
+    line-height: 1.5
+}
+h2 {
+    color: black;
+    font-size: 30px;
+    font-family: Times New Roman;
+}
+h3{
+    color: black;
+    font-size: 24px;
+    font-family: Times New Roman;
+}
+p {
+    color: black; /* comment */
+    font-size: 16px;
+    font-family: Times New Roman;
+    line-height: 1.8;
+}
+    /*font-family: impact, "Arial black", arial, verdana, sans-serif;*/
+    /* Impact en priorité et ainsi de suite, dans l'ordre
+    les classiques: Arial, Arial Black, Courier New, Georgia
+    impact, Times New Roman, Trebuchet MS, Verdana */
+	
+    /*font-size 1.5em par exemple, em est unité relative*/
+    /*font-style: italic;
+    font-weight: bold;
+    text-decoration: underline, overline(au-dessus), line-through
+    (barré) */
+    /*line-height: espace entre les textes; */
+    
+    /*float: left par exemple; texte englobe l'image à gauche en 
+    l'occurence
+    clear: right, annulé le flottement à droite, left ou both
+    ces 2 fonctions doivent être mises en place avec la création
+    d'une class="..." rappel avec le .autreparagraphe comme dans la
+    vidéo*/
+
+    /*color: basique comme black, #123234 (couleur avec un exadécimal,
+    ou rgb(123,434,34)
+    background-color appliqué à body, h1, h2, p...
+    background-image: url("neige.jpg")
+    background-attachment: fixed
+    background-repeat: no-repeat
+    background-position: top right
+    background: url("neige.jpg")fixed no-repeat, url("bleu.jpg") fixed,
+    opacity: 0 -> élément invisible*/
+
+.introduction {
+	color: black; /* permet de multiples class="...", 
+	on pourrait donc l'utiliser pour plusieurs specs */
+}
+#intra {
+	color: black; /* ne permet qu'une seule id */
+}
+
+<div>
+	/*se comporte comme un paragraphe, entourer l'élément afin 
+	de lui ajouter certains specs*/
+</div>
+
+<span></span> /* permet d'isoler un mot à mettre avec des specs*/
+
+* {
+}/*toutes les balises de la page*/
+
+h1 + p {
+} /*cibler le premier paragraphe, qui suit le h1*/
+
+h1 em{
+} /*tous les em dans les h1
